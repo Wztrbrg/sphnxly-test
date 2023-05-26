@@ -38,13 +38,14 @@
         <h3 class="login-modal-subheading">
           Använd ditt namn för att logga in
         </h3>
-        <form action="submit" class="login-form">
+        <form onSubmit="event.preventDefault()" class="login-form">
           <input
             type="text"
             name="username-field"
+            id="username"
             class="username-field"
             placeholder="Namn" />
-          <button class="login-btn">Logga in</button>
+          <button class="login-btn" onclick="handleLogin()">Logga in</button>
         </form>
         <p class="login-modal-para">
           Genom att logga in godkänner du <a href="#">våra villkor</a>
