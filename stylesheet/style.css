@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Libre+Baskerville:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(101, 101, 101, 0.36) 0%, rgba(24, 24, 24, 0.36) 3%, rgba(0, 0, 0, 0.36) 6%, rgba(0, 0, 0, 0.36) 94%, rgba(24, 24, 24, 0.36) 97%, rgba(101, 101, 101, 0.36) 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  letter-spacing: 1.3px;
+}
+.top-nav .nav-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2px;
+}
+.top-nav .nav-link-container .nav-icon {
+  width: 50px;
+  height: 50px;
+}
+.top-nav .nav-link-container .nav-icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: auto;
+}
+.top-nav .nav-link-container .nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-nav .nav-link-container .nav-list a {
+  text-decoration: none;
+  padding: 28px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #a89e89;
+  transition: 0.5s;
+}
+.top-nav .nav-link-container .nav-list a:hover {
+  background-color: rgba(0, 0, 0, 0.0823529412);
+  color: #f0e7d3;
+  transition: 0.5s;
+}
+.top-nav .nav-login-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.top-nav .nav-login-container .login-message-container {
+  display: flex;
+  gap: 4px;
+}
+.top-nav .nav-login-container .login-message-container .user-message,
+.top-nav .nav-login-container .login-message-container .user-info {
+  color: rgba(255, 255, 255, 0.789);
+  font-size: 12px;
+}
+.top-nav .nav-login-container .login-message-container .user-info {
+  font-weight: 700;
+}
+.top-nav .nav-login-container .nav-login-btn {
+  background-color: rgb(174, 160, 127);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 200px;
+}
+
+.hero-section {
+  background: url("../assets/bg-image.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.3px;
+}
+.hero-section .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.hero-section .hero-para {
+  color: #ffffff;
+  z-index: 1;
+}
+.hero-section .hero-heading {
+  font-family: "Libre Baskerville", serif;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.474);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+.login-modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-modal .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px;
+  background-color: rgb(232, 234, 237);
+  border-radius: 8px;
+}
+.login-modal .login-container .login-modal-heading {
+  margin-bottom: 8px;
+}
+.login-modal .login-container .login-modal-subheading {
+  margin-bottom: 24px;
+}
+.login-modal .login-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login-modal .login-container .input-container .username-field,
+.login-modal .login-container .input-container .login-btn {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+.login-modal .login-container .input-container .login-btn {
+  background-color: rgb(175, 161, 126);
+  color: white;
+}/*# sourceMappingURL=style.css.map */

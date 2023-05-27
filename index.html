@@ -4,30 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <script src="script.js" defer></script>
     <title>Sphinxly - Home</title>
   </head>
   <body>
     <header class="top-nav">
       <section class="nav-link-container">
+        <a href="#" class="nav-icon">
+          <img src="assets/test-logga.svg" alt="Hemsidans logotyp" />
+        </a>
         <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="#" class="nav-icon"></a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#">PRODUKTER</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#">OM OSS</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#">BESTÄLLNING</a>
-          </li>
+          <a href="#">
+            <li class="nav-list-item">PRODUKTER</li>
+          </a>
+          <a href="#">
+            <li class="nav-list-item">OM OSS</li>
+          </a>
+          <a href="#">
+            <li class="nav-list-item">BESTÄLLNING</li>
+          </a>
         </ul>
       </section>
       <section class="nav-login-container">
-        <p class="user-info"></p>
+        <div class="login-message-container">
+          <p class="user-message"></p>
+          <p class="user-info"></p>
+        </div>
         <button class="nav-login-btn">LOGGA IN</button>
       </section>
     </header>
@@ -39,13 +42,15 @@
           Använd ditt namn för att logga in
         </h3>
         <form onSubmit="event.preventDefault()" class="login-form">
-          <input
-            type="text"
-            name="username-field"
-            id="username"
-            class="username-field"
-            placeholder="Namn" />
-          <button class="login-btn" onclick="handleLogin()">Logga in</button>
+          <section class="input-container">
+            <input
+              type="text"
+              name="username-field"
+              id="username"
+              class="username-field"
+              placeholder="Namn" />
+            <button class="login-btn" onclick="handleLogin()">Logga in</button>
+          </section>
         </form>
         <p class="login-modal-para">
           Genom att logga in godkänner du <a href="#">våra villkor</a>
@@ -53,6 +58,7 @@
       </section>
     </section>
     <section class="hero-section">
+      <div class="bg-overlay"></div>
       <p class="hero-para">ETT NYY SÄTT ATT UPPTÄCKA</p>
       <h1 class="hero-heading">Silkeslena produkter med glansiga detaljer</h1>
     </section>
