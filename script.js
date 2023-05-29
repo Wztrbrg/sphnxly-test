@@ -9,6 +9,8 @@ const heroPara = document.querySelector(".hero-para");
 const navToggle = document.querySelector(".nav-toggle");
 const navExpand = document.querySelector(".nav-list");
 const closeMenu = document.querySelector(".close-menu");
+const usernameField = document.querySelector(".username-field");
+const usernameLabel = document.querySelector(".username-label");
 
 //toggle expandable nav menu on mobile devices
 let showMenu = false;
@@ -65,6 +67,7 @@ const handleLogout = () => {
     location.reload();
   });
 };
+
 //Checking if current user exists in localStorage or not
 //and setting welcome message accordingly
 const setUserInfo = () => {
